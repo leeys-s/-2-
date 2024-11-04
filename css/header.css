@@ -68,3 +68,59 @@
   width: 100%;
   height: 100%;
 }
+#mb-menu-bt {
+  display: none;
+}
+/* 모바일 반투명 메뉴 배경 css작업 */
+.bg-mb-menu {
+  /* 웹브라우저 고정 */
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* 웹브라우저 고정  left top */
+  width: 100%;
+  height: 100vh;
+  /* % > vh로 바뀜 view */
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+/* 위 display none 에 대한 block 설정임 */
+.mb-menu {
+  position: fixed;
+  left: 0;
+  top: 68px;
+  display: none;
+
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.mb-menu .layout {
+  max-width: 1180px;
+  padding: 20px 40px;
+  margin: 0 auto;
+}
+/* 가운데 들어가라 margin 활용. 위아래 0 좌우로 auto 하라 의미 */
+.mb-menu .layout a {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+/*11월 4일 작업 내용임 */
+/* 헤더 반응형  */
+@media screen and (max-width: 1024px) {
+  .navigation a {
+    display: none;
+  }
+  /* id 에 대한 작업에는 # 을 붙이고, class 는 . 찍고  */
+  #mb-menu-bt {
+    display: none;
+  }
+  .bg-mb-menu {
+    display: block;
+  }
+  .mb-menu {
+    display: block;
+  }
+}

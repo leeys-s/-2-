@@ -6,15 +6,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./images/icon/cropped-main-shape-32x32.png" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="./images/icon/cropped-main-shape-32x32.png"
+      type="image/x-icon"
+    />
     <title>카카오 브레인 블러그 클론 프로젝트</title>
 
     <!-- <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" /> -->
     <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" /> -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main-slide.css" />
+    <link rel="stylesheet" href="./css/main-content.css" />
     <link rel="stylesheet" href="./css/card-list.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
@@ -22,6 +31,9 @@
   <body>
     <!-- 먼저 레이아웃을 잡기위해 주석작성 및 div 를 사용한다. -->
     <!-- div 는 레이아웃 용 이외에는 용도가 없다. -->
+
+    <!-- 반투명 배경 (11월 4일 작업) -->
+    <div class="bg-mb-menu"></div>
 
     <!-- 상단 영역 -->
     <header class="header">
@@ -44,9 +56,22 @@
           <button id="search">
             <img src="./images/icon/icon-search.png" alt="" />
           </button>
+          <!-- 모바일메뉴 11월 4일 작업내용-->
+
+          <button id="mb-menu-bt">
+            <img src="./images/icon/icon-hbr.png" alt="모바일메뉴" />
+          </button>
         </div>
       </div>
     </header>
+    <!-- 모바일용 메뉴 11월 4일 작업 -->
+    <div class="mb-menu">
+      <div class="layout">
+        <a href="#">소식</a>
+        <a href="#">팀 & 크루</a>
+        <a href="#">영입</a>
+      </div>
+    </div>
     <!-- 내용영역 -->
     <main class="main">
       <div class="layout">
@@ -91,7 +116,10 @@
                       <img src="./images/icon/ic_llms.png" alt="llms" />
                       <span>LLMs</span>
                     </div>
-                    <h5 class="thum-title">Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention 공개</h5>
+                    <h5 class="thum-title">
+                      Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention
+                      공개
+                    </h5>
                     <span class="thum-date">2024.10.29</span>
                   </a>
                   <a href="#" class="thum">
@@ -102,7 +130,10 @@
                       <img src="./images/icon/ic_llms.png" alt="llms" />
                       <span>LLMs</span>
                     </div>
-                    <h5 class="thum-title">Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention 공개</h5>
+                    <h5 class="thum-title">
+                      Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention
+                      공개
+                    </h5>
                     <span class="thum-date">2024.10.29</span>
                   </a>
                   <a href="#" class="thum">
@@ -113,7 +144,10 @@
                       <img src="./images/icon/ic_llms.png" alt="llms" />
                       <span>LLMs</span>
                     </div>
-                    <h5 class="thum-title">Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention 공개</h5>
+                    <h5 class="thum-title">
+                      Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention
+                      공개
+                    </h5>
                     <span class="thum-date">2024.10.29</span>
                   </a>
                 </div>
@@ -140,7 +174,10 @@
                       <img src="./images/icon/ic_llms.png" alt="llms" />
                       <span>LLMs</span>
                     </div>
-                    <h5 class="thum-title">Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention 공개</h5>
+                    <h5 class="thum-title">
+                      Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention
+                      공개
+                    </h5>
                     <span class="thum-date">2024.10.29</span>
                   </a>
                   <a href="#" class="thum">
@@ -151,7 +188,10 @@
                       <img src="./images/icon/ic_llms.png" alt="llms" />
                       <span>LLMs</span>
                     </div>
-                    <h5 class="thum-title">Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention 공개</h5>
+                    <h5 class="thum-title">
+                      Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention
+                      공개
+                    </h5>
                     <span class="thum-date">2024.10.29</span>
                   </a>
                   <a href="#" class="thum">
@@ -162,7 +202,10 @@
                       <img src="./images/icon/ic_llms.png" alt="llms" />
                       <span>LLMs</span>
                     </div>
-                    <h5 class="thum-title">Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention 공개</h5>
+                    <h5 class="thum-title">
+                      Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention
+                      공개
+                    </h5>
                     <span class="thum-date">2024.10.29</span>
                   </a>
                 </div>
@@ -177,7 +220,10 @@
                       <img src="./images/icon/ic_llms.png" alt="llms" />
                       <span>LLMs</span>
                     </div>
-                    <h5 class="thum-title">Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention 공개</h5>
+                    <h5 class="thum-title">
+                      Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention
+                      공개
+                    </h5>
                     <span class="thum-date">2024.10.29</span>
                   </a>
                   <a href="#" class="thum">
@@ -188,7 +234,10 @@
                       <img src="./images/icon/ic_llms.png" alt="llms" />
                       <span>LLMs</span>
                     </div>
-                    <h5 class="thum-title">Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention 공개</h5>
+                    <h5 class="thum-title">
+                      Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention
+                      공개
+                    </h5>
                     <span class="thum-date">2024.10.29</span>
                   </a>
                   <a href="#" class="thum">
@@ -199,7 +248,10 @@
                       <img src="./images/icon/ic_llms.png" alt="llms" />
                       <span>LLMs</span>
                     </div>
-                    <h5 class="thum-title">Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention 공개</h5>
+                    <h5 class="thum-title">
+                      Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention
+                      공개
+                    </h5>
                     <span class="thum-date">2024.10.29</span>
                   </a>
                 </div>
@@ -289,18 +341,24 @@
           <div class="left">
             <div class="footer-logo">
               <a href="#">
-                <img src="./images/etc/logo-kakao-footer.png" alt="카카오 블로그" />
+                <img
+                  src="./images/etc/logo-kakao-footer.png"
+                  alt="카카오 블로그"
+                />
               </a>
             </div>
 
             <div class="footer-txt">
               카카오브레인의 혁신은 모든 크루의 물음에서 시작합니다. <br />
-              AI 없이는 상상할 수 없는 세상을 만들기 위해선 생각하지 못한 많은 물음이 필요합니다. <br />
+              AI 없이는 상상할 수 없는 세상을 만들기 위해선 생각하지 못한 많은
+              물음이 필요합니다. <br />
               세상을 변화시킬 수 있는 새로운 물음을 던질 크루를 기다립니다.
             </div>
 
             <div class="footer-link">
-              <a href="https://careers.kakaobrain.com" target="_blank">지원하러가기</a>
+              <a href="https://careers.kakaobrain.com" target="_blank"
+                >지원하러가기</a
+              >
             </div>
           </div>
 

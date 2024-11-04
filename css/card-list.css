@@ -1,5 +1,7 @@
 .main-content .right {
-  width: 300px;
+  /* 300 / 1180 * 100 = vw */
+  width: 25.423vw;
+  max-width: 300px;
 }
 .list-card {
   width: 100%;
@@ -55,4 +57,11 @@
   font-size: 10px;
   background-color: #1e1e1e;
   border-radius: 10px;
+}
+
+/* 11월 4일 반응형 작업 */
+@media screen and (max-width: 1024px) {
+  .main-content .right {
+    display: none;
+  }
 }
