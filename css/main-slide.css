@@ -1,6 +1,7 @@
 /* 11월 4일 반응형 작업 css 옮긴것 */
 .main-slide {
   display: flex;
+  /* 20 / 1180 * 100 */
   gap: 1.695vw;
   /* 20 / 1180* 100 */
 }
@@ -11,7 +12,7 @@
   width: 65.254vw;
   max-width: 770px;
   /* vw vh 쓰려면 max로 크기 제한 해주어야 한다. */
-  height: 39.83vh;
+  height: 39.83vw;
   max-height: 470px;
 }
 
@@ -28,13 +29,14 @@
 .visual-slide a img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .main-slide .right {
   /*  370 / 1180 * 100 */
-  width: 31.55vw;
+  width: 31.355vw;
   max-width: 370px;
   /* 470 / 1180 * 100 */
-  height: 39.83vh;
+  height: 39.83vw;
   max-height: 470px;
 }
 .card-slide {
@@ -51,6 +53,20 @@
   width: 100%;
   height: 100%;
 }
+.list-card-bt-wrap {
+  display: flex;
+  justify-content: center;
+}
+/* 하단 카드 슬라이드 html 336줄 */
+.mb-card-slide {
+  margin-top: 60px;
+}
+/* js로 변경 예정 */
+.mb-card-slide-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
 
 /* 가로 너비 대비 세로가 평상시에도 변한다. */
 /* 11월 4일 반응형 작업 내용 */
@@ -65,10 +81,15 @@
   }
   .main-slide .left {
     width: 100%;
+    max-width: 100%;
     height: 980px;
+    max-height: 980px;
   }
   .main-slide .right {
     display: none;
     /* .main-slide .right이 1024px 기준 안보이게 한다. 의미 임 */
+  }
+  .mb-card-slide {
+    display: block;
   }
 }

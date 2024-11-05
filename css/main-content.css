@@ -6,7 +6,7 @@
 }
 
 .main-content .left {
-  /* 840 / 1180 * 100 vw */
+  /* 840 / 1180 * 100 = vw */
   width: 71.186vw;
   max-width: 840px;
 }
@@ -26,7 +26,7 @@
   margin-bottom: 40px;
 }
 .thum {
-  width: 260px;
+  max-width: 260px;
   text-decoration: none;
 }
 
@@ -113,15 +113,26 @@
 .banner a img {
   width: 100%;
   height: 100%;
+
+  /* object-fit: contain; */
+  object-fit: cover;
 }
-/* object-fit: contain; */
-.object-fit: cover;
 
 .list-cate-wrap {
 }
 
+.mb-card-slide {
+  display: none;
+}
+
 /* 11월 4일 반응형 작업 */
 @media screen and (max-width: 1120px) {
+  .thum {
+    max-width: 255px;
+  }
+}
+
+@media screen and (max-width: 1090px) {
   .thum {
     max-width: 250px;
   }
@@ -129,6 +140,11 @@
 @media screen and (max-width: 1060px) {
   .thum {
     max-width: 245px;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .thum {
+    max-width: 240px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -148,5 +164,14 @@
   }
   .thum-img {
     height: 740px;
+  }
+
+  .banner {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .mb-card-slide {
+    display: block;
   }
 }
