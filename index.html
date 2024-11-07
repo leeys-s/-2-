@@ -26,13 +26,13 @@
     <link rel="stylesheet" href="./css/main-content.css" />
     <link rel="stylesheet" href="./css/card-list.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <!-- 11월 6일(수) 추가 내용-->
+    <script src="./js/header.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/footer.js"></script>
+    <!-- 왜 스크립트 body에 안두고 head에 두느냐? 관례이지만
+     단점이있다.  -->
   </head>
-
-  <!-- 11월 5일 자바스크립트 -->
-
-  <script>
-    console.log("1");
-  </script>
 
   <body>
     <!-- 먼저 레이아웃을 잡기위해 주석작성 및 div 를 사용한다. -->
@@ -121,7 +121,6 @@
                     <img src="./images/icon/ic_llms.png" alt="llms" />
                     <span>LLMs</span>
                   </div>
-
                   <h5 class="thum-title">
                     Transformer 기반 AI 가속 프레임워크 ALiBi FlashAttention
                     공개
@@ -387,6 +386,7 @@
             <div class="card-img">
               <img src="./images/p1.png" alt="card" />
             </div>
+
             <div class="card-info">
               <h5 class="card-cate">LLMs</h5>
               <span class="card-count">5</span>
@@ -482,7 +482,7 @@
       </div>
     </footer>
   </body>
-  <script>
+  <!-- <script>
     //  vanila js (순수한 자바스크립트)
     console.log(document);
     // console.log("아이디로 찾기 : ", document.getElementById("search"));
@@ -525,5 +525,5 @@
     //검색버튼.onclick = function () {
     // alert("또보자");
     //};
-  </script>
+  </script> -->
 </html>
