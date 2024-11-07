@@ -13,6 +13,13 @@
     />
     <title>카카오 브레인 블러그 클론 프로젝트</title>
 
+    <!-- 11월7일 Swiper 작업 16줄 ~  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" /> -->
     <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" /> -->
     <link
@@ -30,6 +37,9 @@
     <script src="./js/header.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/footer.js"></script>
+    <script src="./js/slide-main.js"></script>
+    <script src="./js/slide-logo.js"></script>
+    <script src="./js/slide-card.js"></script>
     <!-- 왜 스크립트 body에 안두고 head에 두느냐? 관례이지만
      단점이있다.  -->
   </head>
@@ -84,14 +94,37 @@
       <div class="main-slide">
         <!-- 왼쪽 슬라이드 -->
         <div class="left">
+          <!-- Swipe 추가 98 ~ 117 -->
+          <!-- Slider main container -->
+          <!--@Start 비주얼 슬라이드  -->
+
+          <!-- Swipe 복붙 끝 지점. -->
           <!-- 교체 가능 -->
-          <div class="visual-slide">
-            <a href="#">
-              <img src="./images/b1.png" alt="배너이미지" />
-            </a>
+          <div class="swiper visual-slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="./images/b1.png" alt="배너이미지" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="./images/b1.png" alt="배너이미지" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="./images/b1.png" alt="배너이미지" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="./images/b1.png" alt="배너이미지" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-
         <!-- 오른쪽 슬라이드 -->
         <div class="right">
           <!-- 교체 가능 -->
@@ -344,55 +377,79 @@
       <!-- 카드 슬라이드 -->
       <div class="mb-card-slide">
         <h4 class="list-title">폴더 📁</h4>
-        <div class="mb-card-slide-wrap">
-          <!--@Start card -->
-          <a href="#" class="card-wrap">
-            <div class="card-img">
-              <img src="./images/p1.png" alt="card" />
-            </div>
+        <div class="swiper mb-card-slide-wrap">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <!--@Start card -->
+              <a href="#" class="card-wrap">
+                <div class="card-img">
+                  <img src="./images/p1.png" alt="card" />
+                </div>
 
-            <div class="card-info">
-              <h5 class="card-cate">LLMs</h5>
-              <span class="card-count">5</span>
+                <div class="card-info">
+                  <h5 class="card-cate">LLMs</h5>
+                  <span class="card-count">5</span>
+                </div>
+              </a>
+              <!--@End card -->
             </div>
-          </a>
-          <!--@End card -->
-          <!--@Start card -->
-          <a href="#" class="card-wrap">
-            <div class="card-img">
-              <img src="./images/p1.png" alt="card" />
-            </div>
+            <div class="swiper-slide">
+              <!--@Start card -->
+              <a href="#" class="card-wrap">
+                <div class="card-img">
+                  <img src="./images/p1.png" alt="card" />
+                </div>
 
-            <div class="card-info">
-              <h5 class="card-cate">LLMs</h5>
-              <span class="card-count">5</span>
+                <div class="card-info">
+                  <h5 class="card-cate">LLMs</h5>
+                  <span class="card-count">5</span>
+                </div>
+              </a>
+              <!--@End card -->
             </div>
-          </a>
-          <!--@End card -->
-          <!--@Start card -->
-          <a href="#" class="card-wrap">
-            <div class="card-img">
-              <img src="./images/p1.png" alt="card" />
-            </div>
+            <div class="swiper-slide">
+              <!--@Start card -->
+              <a href="#" class="card-wrap">
+                <div class="card-img">
+                  <img src="./images/p1.png" alt="card" />
+                </div>
 
-            <div class="card-info">
-              <h5 class="card-cate">LLMs</h5>
-              <span class="card-count">5</span>
+                <div class="card-info">
+                  <h5 class="card-cate">LLMs</h5>
+                  <span class="card-count">5</span>
+                </div>
+              </a>
+              <!--@End card -->
             </div>
-          </a>
-          <!--@End card -->
-          <!--@Start card -->
-          <a href="#" class="card-wrap">
-            <div class="card-img">
-              <img src="./images/p1.png" alt="card" />
-            </div>
+            <div class="swiper-slide">
+              <!--@Start card -->
+              <a href="#" class="card-wrap">
+                <div class="card-img">
+                  <img src="./images/p1.png" alt="card" />
+                </div>
 
-            <div class="card-info">
-              <h5 class="card-cate">LLMs</h5>
-              <span class="card-count">5</span>
+                <div class="card-info">
+                  <h5 class="card-cate">LLMs</h5>
+                  <span class="card-count">5</span>
+                </div>
+              </a>
+              <!--@End card -->
             </div>
-          </a>
-          <!--@End card -->
+            <div class="swiper-slide">
+              <!--@Start card -->
+              <a href="#" class="card-wrap">
+                <div class="card-img">
+                  <img src="./images/p1.png" alt="card" />
+                </div>
+
+                <div class="card-info">
+                  <h5 class="card-cate">LLMs</h5>
+                  <span class="card-count">5</span>
+                </div>
+              </a>
+              <!--@End card -->
+            </div>
+          </div>
         </div>
         <div class="list-card-bt-wrap">
           <button id="bt-mb-more-card" class="bt">전체보기</button>
