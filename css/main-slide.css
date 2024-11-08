@@ -31,6 +31,22 @@
   height: 100%;
   object-fit: cover;
 }
+/* 11월 8일(금) 슬라이드 작업 */
+/* .swiper-pagination-bullet-active html 통해서 찾아낸 것 */
+.visual-slide .swiper-pagination .swiper-pagination-bullet {
+  background-color: #ffffff;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  transition: all 0.5s;
+  /* auto 플레이 넣는 것 */
+}
+
+.visual-slide .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #ffffff;
+  width: 20px;
+}
+
 .main-slide .right {
   /*  370 / 1180 * 100 */
   width: 31.355vw;
@@ -60,12 +76,17 @@
 /* 하단 카드 슬라이드 html 336줄 */
 .mb-card-slide {
   margin-top: 60px;
+  display: none;
+  overflow: hidden;
 }
 /* js로 변경 예정 */
+/* 11월 8일 (금)작업 slide-card.js */
 .mb-card-slide-wrap {
   display: flex;
   justify-content: space-between;
   gap: 15px;
+  width: 1160px;
+  /* background-color: red; */
 }
 
 /* 가로 너비 대비 세로가 평상시에도 변한다. */
